@@ -47,11 +47,8 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
 }
-.botao:first-child{
-    border-radius: 20px 0px 0px 20px;
-}
-.botao:last-child{
-    border-radius: 0px 20px 20px 0px;
+.botao{
+    border-radius: 20px 20px 20px 20px;
 }
 .ativo{
     background-color: var(--botao-ativo);
@@ -60,6 +57,15 @@ span{
 @media screen and (min-width: 700px) {
     .botoes{
         display: flex;
+    }
+    .botao{
+        border-radius: 0%;
+    }
+    .botao:first-child{
+        border-radius: 20px 0px 0px 20px;
+    }
+    .botao:last-child{
+        border-radius: 0px 20px 20px 0px;
     }
 }
 .ativo{
